@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 day challenge on Full stack Tecnology</title>
+    <link rel="stylesheet" href="./styles/day1-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,400&display=swap"
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,400&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <h1>Day 1 of 100 Day Challenge - HTML, CSS and JavaScript</h1>
+        <a href="../index.html"><span>[back to main page]</span></a>
+
+        <section class="summary">
+            <h2>Summary</h2>
+            <ul>
+                <li>
+                    CSS Selectors - Element/class/id/attribute
+                </li>
+                <li>
+                    Selector Combinators
+                    <ul>
+                        <li>General sibling Combinator</li>
+                        <li>Adjacent Sibling Combinator</li>
+                        <li>Descedent Combinator</li>
+                        <li>Child Combinator</li>
+                    </ul>
+                </li>
+                <li>CSS rule specificity order (from lowest to highest priority)
+                    <ul>
+                        <li>Browser defined level</li>
+                        <li>Element level</li>
+                        <li>Class / Pseudo class / attributes level</li>
+                        <li>ID level</li>
+                        <li><b>! </b>important keyword</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section class="notes">
+            <h2>Examples</h2>
+
+            <section class="section-topic">
+                <h3>1. General Sibling Combinator [~] </h3>
+                <p>To identify any sibling irrespective of position in DOM hierarchy as long as both has same parent</p>
+                <div class="container-left general-sibling-combinator">
+                    <p>P element before H3</p>
+                    <h4>Heading 4</h4>
+                    <p> sibling paragraph of H4</p>P
+                    <div>
+                        <p>Grand child paragraph</p>
+                    </div>
+                    <p>Sibling paragraph of H4</p>
+                    <div>
+                        <p>Grand child paragraph</p>
+                    </div>
+                    <p>Sibling paragraph of H4</p>
+                </div>
+                <div class="container-right">
+
+                    <img src="images/sibling-combinator-html.png" alt="">
+                    <img src="images/sibling-combinator-css.png" alt="">
+
+                </div>
+                <div class="clearfix"></div>
+            </section>
+            <section class="section-topic">
+                <h3>2. Adjacent Sibling Combinator [+] </h3>
+                <p>To identify any sibling very next in position in DOM hierarchy as long as both has same parent</p>
+                <div class="container-left  adjacent-sibling-combinator">
+                    <p>P element before H3</p>
+                    <h4>Heading 4</h4>
+                    <p> sibling paragraph of H4</p>
+                    <div>
+                        <p>Grand child paragraph</p>
+                    </div>
+                    <p>Sibling paragraph of H4</p>
+                    <div>
+                        <p>Grand child paragraph</p>
+                    </div>
+                    <p>Sibling paragraph of H4</p>
+                </div>
+                <div class="container-right">
+
+                    <img src="images/adjacent-sibling-combinator-html.png" alt="">
+                    <img src="images/adjacent-sibling-combinator-css.png" alt="">
+
+                </div>
+                <div class="clearfix"></div>
+            </section>
+            <section class="section-topic">
+                <h3>3. Descedent Combinator </h3>
+                <p>To identify any sibling anywhere and at any level in the DOM hierarchy.</p>
+                <div class="container-left  descendent-sibling-combinator">
+                    <div>
+                        <p>P element before H3</p>
+                        <h4>Heading 4</h4>
+                        <p> sibling paragraph of H4</p>
+                        <p>
+                        <p>Grand child paragraph</p>
+                        </p>
+                        <p>Sibling paragraph of H4</p>
+                        <p>
+                        <ul>
+                            <li>item 1</li>
+                            <li>item 2</li>
+                            <li>
+                                <p>
+                                    item 3 inside p
+                                </p>
+                            </li>
+                        </ul>
+                        <p>Grand child paragraph</p>
+                        </p>
+                        <p>Sibling paragraph of H4</p>
+                    </div>
+                </div>
+                <div class="container-right">
+
+                    <img src="images/descendent-comninator-html.png" alt="">
+                    <img src="images/descendent-comninator-css.png" alt="">
+
+                </div>
+                <div class="clearfix"></div>
+            </section>
+
+    </div>
+
+</body>
+<script src="scripts/day1-script.js"></script>
+
+</html>

@@ -1,0 +1,55 @@
+body {
+  background-color: #f0ebd8;
+  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
+}
+
+.section-topic {
+  clear: both;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container-left {
+  width: 49%;
+  float: left;
+}
+.container-right {
+  width: 49%;
+  float: right;
+}
+.container-right img {
+  width: 50%;
+  height: 50%;
+}
+
+.main {
+  width: 85%;
+  margin: auto;
+}
+h1 {
+  display: inline-block;
+}
+
+.notes {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.general-sibling-combinator h4 ~ p {
+  color: blue;
+  border: 1px solid black;
+}
+
+.adjacent-sibling-combinator h4 + p {
+  color: blue;
+  border: 1px solid black;
+}
+
+.descendent-sibling-combinator div p {
+  color: blue;
+  border: 1px solid black;
+}
